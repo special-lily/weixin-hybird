@@ -28,13 +28,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        // '/v1': {
-        //     target: 'http://dev.com',
-        //     changeOrigin: true,
-        //     pathRewrite: {
-        //         '^/v1': '/v1'
-        //     }
-        // }
+        '/api': {
+            target: ' http://127.0.0.1:3003',
+            changeOrigin: true,
+            pathRewrite: {
+                '^/api': '/api'
+            }
+        }
     },
     cssSourceMap: false
   }
